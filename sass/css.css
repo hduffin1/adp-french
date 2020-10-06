@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500,800|Playfair+Display:900i&display=swap");
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 85px;
+  letter-spacing: -6px;
+  line-height: 89px;
+  z-index: 0;
+  color: #0091cd;
+  margin: 0;
+  margin-top: 30px;
+  max-width: 900px;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 36px;
+  letter-spacing: -2px;
+  margin: 0;
+  color: #9ad1ed;
+  margin-bottom: -90px;
+}
+
+h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: 28px;
+  margin: 0;
+  color: #ec5f6f;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #173558;
+}
+
+.parcel-img {
+  z-index: -1;
+  margin-top: 37px;
+  width: 225px;
+  height: 155px;
+  margin-left: -20px;
+}
+
+.video-holder {
+  padding-top: 20px;
+}
+.video-holder .video {
+  flex-basis: 65%;
+}
+.video-holder .chat-holder {
+  flex-basis: 25%;
+}
+.video-holder .chat-holder #chat {
+  margin-top: 90px;
+  height: 500px;
+}
+
+.col-1 {
+  width: 100%;
+}
+
+.col-2 {
+  width: 100%;
+}
+
+.contact {
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #0091cd;
+  color: #0091cd;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  margin: 0;
+  margin-top: 60px;
+  width: 90%;
+}
+
+button.accordion-blue {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #0091cd;
+  color: #0091cd;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  margin: 0;
+  margin-top: 60px;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button.accordion-blue.active, button.accordion-blue:hover {
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+div.panel {
+  margin-top: 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  width: 100%;
+}
+div.panel a {
+  color: #0091cd;
+}
+
+.hermes-logo {
+  height: 60px;
+  float: right;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+footer p {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #9ad1ed;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 15px;
+  }
+
+  h1 {
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: -4px;
+    margin-top: 20px;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  .flex {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .video-holder {
+    padding-top: 40px;
+  }
+  .video-holder .video {
+    flex-basis: 100%;
+  }
+  .video-holder .chat-holder {
+    width: 100%;
+  }
+  .video-holder .chat-holder #chat {
+    margin-top: 20px;
+    width: 330px;
+  }
+
+  .parcel-img {
+    display: none;
+  }
+
+  button.accordion-blue {
+    margin-top: 30px;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  div.panel {
+    width: 100%;
+  }
+
+  .hermes-logo {
+    height: 60px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  body {
+    margin: 20px;
+  }
+
+  h1 {
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: -4px;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  .flex-heading {
+    flex-wrap: nowrap;
+  }
+
+  .flex {
+    flex-wrap: wrap;
+  }
+
+  .video-holder {
+    padding-top: 40px;
+  }
+  .video-holder .video {
+    flex-basis: 100%;
+  }
+  .video-holder .chat-holder {
+    width: 100%;
+  }
+  .video-holder .chat-holder #chat {
+    margin-top: 20px;
+    width: auto;
+  }
+
+  .parcel-img {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  button.accordion-blue {
+    margin-top: 30px;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  div.panel {
+    width: 100%;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body {
+    margin: 20px;
+  }
+
+  .flex {
+    flex-wrap: wrap;
+  }
+
+  h1 {
+    font-size: 70px;
+    line-height: 60px;
+    letter-spacing: -4px;
+  }
+
+  h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .parcel-img {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .video-holder .video {
+    flex-basis: 100%;
+  }
+  .video-holder .chat-holder {
+    width: 100%;
+  }
+  .video-holder .chat-holder #chat {
+    margin-top: 20px;
+    width: auto;
+  }
+
+  button.accordion-blue {
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  div.panel {
+    width: 100%;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+  body {
+    margin: 20px;
+  }
+}
+
+/*# sourceMappingURL=css.css.map */
