@@ -1,7 +1,65 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:500,800|Playfair+Display:900i&display=swap");
+@font-face {
+  font-family: "TaubSans-Super";
+  font-style: normal;
+  font-weight: normal;
+  src: local("TaubSans-Super"), url("fonts/TaubSans-Super.woff") format("woff");
+}
+@font-face {
+  font-family: "TaubSans-Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("TaubSans-Medium"), url("fonts/TaubSans-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "TaubSans-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("TaubSans-Regular"), url("fonts/TaubSans-Regular.woff") format("woff");
+}
+h1 {
+  font-family: "TaubSans-Super";
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 50px;
+}
+
+h2 {
+  font-family: "TaubSans-Medium";
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 30px;
+}
+
+p {
+  font-family: "TaubSans-Regular";
+  color: #fff;
+  font-size: 18px;
+  line-height: 38px;
+}
+
+strong {
+  font-family: "TaubSans-Medium";
+}
+
+ul {
+  padding-left: 20px;
+}
+ul li {
+  font-family: "TaubSans-Regular";
+  color: #fff;
+  font-size: 18px;
+  line-height: 38px;
+}
+
+body {
+  margin: 0;
+  background-color: #26328c;
+}
+
 .container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
+  padding: 0px 15px;
 }
 
 .flex {
@@ -9,315 +67,250 @@
   justify-content: space-between;
 }
 
-.flex-heading {
-  display: flex;
-  justify-content: space-between;
+.header-wrapper {
+  margin-top: 30px;
+}
+.header-wrapper .logo {
+  height: 200px;
+}
+.header-wrapper .header-head {
+  height: 200px;
 }
 
-a {
+.welcome-wrapper {
+  position: relative;
+  margin-top: 5%;
+}
+.welcome-wrapper .border-left {
+  position: absolute;
+  height: 140px;
+}
+.welcome-wrapper .welcome-content-wrapper {
+  margin-top: 50px;
+}
+.welcome-wrapper .welcome-content-wrapper .welcome-content {
+  padding-top: 1px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.welcome-wrapper .welcome-content-wrapper .welcome-content a {
   text-decoration: none;
 }
-
-h1 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 800;
-  font-size: 85px;
-  letter-spacing: -6px;
-  line-height: 89px;
-  z-index: 0;
-  color: #0091cd;
-  margin: 0;
-  margin-top: 30px;
-  max-width: 900px;
-}
-
-h2 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 800;
-  font-size: 36px;
-  letter-spacing: -2px;
-  margin: 0;
-  color: #9ad1ed;
-  margin-bottom: -90px;
-}
-
-h3 {
-  font-family: "Playfair Display", serif;
-  font-weight: 900;
-  font-size: 28px;
-  margin: 0;
-  color: #ec5f6f;
-}
-
-h4 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  color: #173558;
-}
-
-.parcel-img {
-  z-index: -1;
-  margin-top: 37px;
-  width: 225px;
-  height: 155px;
-  margin-left: -20px;
-}
-
-.video-holder {
-  padding-top: 20px;
-}
-.video-holder .video {
-  flex-basis: 65%;
-}
-.video-holder .chat-holder {
-  flex-basis: 25%;
-}
-.video-holder .chat-holder #chat {
-  margin-top: 90px;
-  height: 500px;
-}
-
-.col-1 {
-  width: 100%;
-}
-
-.col-2 {
-  width: 100%;
-}
-
-.contact {
-  display: inline-block;
-  padding: 10px;
-  text-align: center;
-  border-radius: 5px;
-  border: 1px solid #0091cd;
-  color: #0091cd;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 800;
-  font-size: 20px;
-  margin: 0;
-  margin-top: 60px;
-  width: 90%;
-}
-
-button.accordion-blue {
-  display: inline-block;
-  padding: 10px 20px;
-  text-align: center;
-  border-radius: 5px;
-  border: 1px solid #0091cd;
-  color: #0091cd;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 800;
-  font-size: 20px;
-  margin: 0;
-  margin-top: 60px;
-}
-
-button:focus {
-  outline: 0;
-}
-
-button.accordion-blue.active, button.accordion-blue:hover {
+.welcome-wrapper .welcome-content-wrapper .welcome-content a:hover {
   transition: 0.4s;
-  cursor: pointer;
+}
+.welcome-wrapper .border-right {
+  position: absolute;
+  height: 140px;
+  right: 0;
+  bottom: -60px;
 }
 
-div.panel {
-  margin-top: 10px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  width: 100%;
+.columns-wrapper .content {
+  padding: 20px;
 }
-div.panel a {
-  color: #0091cd;
+.columns-wrapper img {
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
-
-.hermes-logo {
-  height: 60px;
-  float: right;
-  margin-top: 60px;
-  margin-bottom: 60px;
+.columns-wrapper .la-grand {
+  width: 50%;
+  border: 1px solid #fff;
 }
-
-footer p {
-  font-size: 14px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  color: #9ad1ed;
+.columns-wrapper .focus {
+  width: 50%;
+  border: 1px solid #fff;
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  body {
-    margin: 15px;
-  }
-
-  h1 {
-    font-size: 50px;
-    line-height: 50px;
-    letter-spacing: -4px;
-    margin-top: 20px;
-  }
-
-  h2 {
-    margin-bottom: 20px;
-  }
-
   .flex {
     flex-wrap: wrap;
-    justify-content: space-around;
   }
 
-  .video-holder {
-    padding-top: 40px;
+  .header-wrapper .logo {
+    width: 50%;
+    height: auto;
   }
-  .video-holder .video {
-    flex-basis: 100%;
-  }
-  .video-holder .chat-holder {
-    width: 100%;
-  }
-  .video-holder .chat-holder #chat {
-    margin-top: 20px;
-    width: 330px;
+  .header-wrapper .header-head {
+    width: 40%;
+    height: auto;
   }
 
-  .parcel-img {
-    display: none;
+  .columns-wrapper .content {
+    padding: 20px;
   }
-
-  button.accordion-blue {
-    margin-top: 30px;
-    width: 100%;
-    font-size: 16px;
-  }
-
-  div.panel {
-    width: 100%;
-  }
-
-  .hermes-logo {
-    height: 60px;
-    float: none;
+  .columns-wrapper img {
+    padding-top: 0;
     margin-left: auto;
     margin-right: auto;
     display: block;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    width: 100%;
+    height: auto;
+  }
+  .columns-wrapper .la-grand {
+    width: 100%;
+    border: 1px solid #fff;
+  }
+  .columns-wrapper .focus {
+    width: 100%;
+    border: 1px solid #fff;
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 601px) and (max-width: 768px) {
-  body {
-    margin: 20px;
-  }
-
-  h1 {
-    font-size: 50px;
-    line-height: 50px;
-    letter-spacing: -4px;
-  }
-
-  h2 {
-    margin-bottom: 20px;
-  }
-
-  .flex-heading {
-    flex-wrap: nowrap;
-  }
-
   .flex {
     flex-wrap: wrap;
   }
 
-  .video-holder {
-    padding-top: 40px;
-  }
-  .video-holder .video {
-    flex-basis: 100%;
-  }
-  .video-holder .chat-holder {
-    width: 100%;
-  }
-  .video-holder .chat-holder #chat {
-    margin-top: 20px;
-    width: auto;
+  .header-wrapper .logo {
+    width: 50%;
   }
 
-  .parcel-img {
-    margin-left: 0;
-    margin-top: 30px;
+  .columns-wrapper .content {
+    padding: 20px;
   }
-
-  button.accordion-blue {
-    margin-top: 30px;
+  .columns-wrapper img {
+    padding-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     width: 100%;
-    font-size: 16px;
+    height: auto;
   }
-
-  div.panel {
+  .columns-wrapper .la-grand {
     width: 100%;
+    border: 1px solid #fff;
+  }
+  .columns-wrapper .focus {
+    width: 100%;
+    border: 1px solid #fff;
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  body {
-    margin: 20px;
-  }
-
   .flex {
     flex-wrap: wrap;
   }
 
-  h1 {
-    font-size: 70px;
-    line-height: 60px;
-    letter-spacing: -4px;
+  .columns-wrapper .content {
+    padding: 20px;
   }
-
-  h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
+  .columns-wrapper img {
+    padding-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100%;
+    height: auto;
   }
+  .columns-wrapper .la-grand {
+    width: 49%;
+    border: 1px solid #fff;
+  }
+  .columns-wrapper .focus {
+    width: 49%;
+    border: 1px solid #fff;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .columns-wrapper .content {
+    padding: 20px;
+  }
+  .columns-wrapper img {
+    padding-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .columns-wrapper .la-grand {
+    width: 49%;
+    border: 1px solid #fff;
+  }
+  .columns-wrapper .focus {
+    width: 49%;
+    border: 1px solid #fff;
+  }
+}
+footer {
+  margin-top: 100px;
+}
+footer .adp-wrapper .adp-logo {
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  height: 150px;
+}
+footer .adp-wrapper .shapes {
+  flex-wrap: 70%;
+  height: 200px;
+}
 
-  .parcel-img {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  footer {
+    margin-top: 100px;
+  }
+  footer .flex {
+    flex-wrap: nowrap;
+  }
+  footer .adp-wrapper .adp-logo {
+    margin-top: 50px;
     margin-left: 0;
-    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 100px;
+    flex-basis: 10%;
   }
-
-  .video-holder .video {
-    flex-basis: 100%;
-  }
-  .video-holder .chat-holder {
-    width: 100%;
-  }
-  .video-holder .chat-holder #chat {
-    margin-top: 20px;
-    width: auto;
-  }
-
-  button.accordion-blue {
-    margin-top: 30px;
-    width: 100%;
-  }
-
-  div.panel {
-    width: 100%;
+  footer .adp-wrapper .shapes {
+    flex-wrap: 70%;
+    height: auto;
   }
 }
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 991px) and (max-width: 1200px) {
-  body {
-    margin: 20px;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  footer {
+    margin-top: 100px;
+  }
+  footer .flex {
+    flex-wrap: nowrap;
+  }
+  footer .adp-wrapper .adp-logo {
+    margin-top: 50px;
+    margin-left: 0;
+    margin-bottom: 30px;
+    height: auto;
+    flex-basis: 10%;
+  }
+  footer .adp-wrapper .shapes {
+    flex-wrap: 70%;
+    height: auto;
   }
 }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  footer {
+    margin-top: 100px;
+  }
+  footer .flex {
+    flex-wrap: nowrap;
+  }
+  footer .adp-wrapper .adp-logo {
+    margin-top: 50px;
+    margin-left: 0;
+    margin-bottom: 30px;
+    height: auto;
+    flex-basis: 10%;
+  }
+  footer .adp-wrapper .shapes {
+    flex-wrap: 70%;
+    height: 180px;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
 
 /*# sourceMappingURL=css.css.map */

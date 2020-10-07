@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    background-color: $blue;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-wrapper {
+    margin-top: 30px;
+    .logo {
+        height: 200px;
+    }
+
+    .header-head {
+        height: 200px;
+    }
+}

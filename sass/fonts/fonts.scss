@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'TaubSans-Super';
+    font-style: normal;
+    font-weight: normal;
+    src: local('TaubSans-Super'), url('fonts/TaubSans-Super.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'TaubSans-Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('TaubSans-Medium'), url('fonts/TaubSans-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'TaubSans-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('TaubSans-Regular'), url('fonts/TaubSans-Regular.woff') format('woff');
+}
+
+
+
+
+h1 {
+    font-family: 'TaubSans-Super';
+    text-transform: uppercase;
+    color: $white;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: 'TaubSans-Medium';
+    text-transform: uppercase;
+    color: $white;
+    font-size: 30px;
+}
+
+p {
+    font-family: 'TaubSans-Regular';
+    color: $white;
+    font-size: 18px;
+    line-height: 38px;
+}
+
+strong {
+    font-family: 'TaubSans-Medium';   
+}
+
+ul {
+    padding-left: 20px;
+    li {
+        font-family: 'TaubSans-Regular';
+        color: $white;
+        font-size: 18px;
+        line-height: 38px;
+    }
+}
