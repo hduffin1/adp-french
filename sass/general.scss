@@ -1,6 +1,54 @@
 body {
     margin: 0;
+}
+
+header {
     background-color: $blue;
+
+    .header-wrapper {
+        .logo {
+            height: 110px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        .btn-holder {
+            margin-top: 50px;
+            .header-btn {
+                color: $white;
+                padding: 10px 20px;
+                border: 2px solid $white;
+                margin-right: 10px;
+                font-family: 'TaubSans-Medium';
+                text-decoration: none;
+                text-align: center;
+
+                &:hover {
+                    background-color: $white;
+                    color: $blue;
+                    transition: .4s;
+                }
+            }
+        }
+
+        .header-head {
+            margin-left: 30px;
+            padding-top: 10px;
+            height: 120px;
+        }
+    }
+}
+
+.lower-header {
+    background-color: $blue;
+    text-align: center;
+    height: 60px;
+    border-top: 2px solid $white;
+    p {
+        color: $white;
+        margin:0;
+        padding: 10px;
+    }
 }
 
 .container {
@@ -14,13 +62,86 @@ body {
     justify-content: space-between;
 }
 
-.header-wrapper {
-    margin-top: 30px;
-    .logo {
-        height: 200px;
-    }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .header-wrapper {
+        a {
+        width: 40%;
+            .logo {
+                height: auto;
+                width: 100%;
+            }
+        }
+        .right {
+            width: 40%;
 
-    .header-head {
-        height: 200px;
+            .btn-holder {
+                margin-top: 20px;
+                .header-btn {
+                    display: block;
+                    margin-bottom: 10px;
+                    width: 100%;
+                }
+            }
+
+            .header-head {
+                display: none;
+            }
+        }
     }
 }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) 
+and (max-width: 768px) {
+    .flex {
+        flex-wrap: wrap;
+    }
+
+    .header-wrapper {
+        a {
+        width: 50%;
+            .logo {
+                height: auto;
+                width: 100%;
+            }
+        }
+        .right {
+            width: 40%;
+
+            .btn-holder {
+                margin-top: 30px;
+                .header-btn {
+                    display: block;
+                    margin-bottom: 10px;
+                    width: 100%;
+                }
+            }
+
+            .header-head {
+                display: none;
+            }
+        }
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)
+and (max-width: 991px) {
+  .flex {
+        flex-wrap: wrap;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 992px)
+and (max-width: 1200px) {
+   
+}
+
+
+
+
+
+

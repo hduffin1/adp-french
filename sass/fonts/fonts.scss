@@ -19,26 +19,23 @@
     src: local('TaubSans-Regular'), url('fonts/TaubSans-Regular.woff') format('woff');
 }
 
-
-
-
 h1 {
     font-family: 'TaubSans-Super';
     text-transform: uppercase;
-    color: $white;
+    color: $blue;
     font-size: 50px;
 }
 
 h2 {
     font-family: 'TaubSans-Medium';
     text-transform: uppercase;
-    color: $white;
+    color: $orange;
     font-size: 30px;
 }
 
 p {
     font-family: 'TaubSans-Regular';
-    color: $white;
+    color: $black;
     font-size: 18px;
     line-height: 38px;
 }
@@ -51,7 +48,7 @@ ul {
     padding-left: 20px;
     li {
         font-family: 'TaubSans-Regular';
-        color: $white;
+        color: $black;
         font-size: 18px;
         line-height: 38px;
     }

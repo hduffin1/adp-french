@@ -1,0 +1,75 @@
+.la-grand {
+    margin-top: 50px;
+
+    .col-1 {
+        width: 40%;
+    }
+
+    .col-2 {
+        width: 50%;
+        text-align: right;
+    }
+
+    .focus {
+
+        .dates-holder {
+            .december {
+                width: 90%;
+                margin-left: auto;
+            }   
+        }  
+    }
+
+    .dates-holder {
+        display: flex;
+        justify-content: space-between;
+
+        .october {
+            width: 48%;
+
+            p {
+                text-align: center;
+                background-color: $orange;
+                padding: 10px;
+            }
+
+            .btn {
+                background-color: transparent;
+                border: 2px solid $blue;
+                font-family: 'TaubSans-Medium';
+            }
+        }
+
+        .december {
+            width: 48%;
+
+            p {
+                text-align: center;
+                background-color: $orange;
+                padding: 10px;
+            }
+
+            .date {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
+
+                .time {
+                    padding: 0;
+                    background-color: transparent;
+                    margin: 0;
+                }
+
+                .register {
+                    border: 2px solid $blue;
+                    padding: 10px;
+                    font-family: 'TaubSans-Medium';
+                    text-decoration: none;
+                    color: $blue;
+                    width: 40%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
