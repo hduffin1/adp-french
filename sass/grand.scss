@@ -1,75 +1,112 @@
-.la-grand {
-    margin-top: 50px;
+.col-wrapper {
+    margin-top: 100px;
 
-    .col-1 {
-        width: 40%;
-    }
-
-    .col-2 {
-        width: 50%;
-        text-align: right;
-    }
-
-    .focus {
-
-        .dates-holder {
-            .december {
-                width: 90%;
-                margin-left: auto;
-            }   
-        }  
-    }
-
-    .dates-holder {
-        display: flex;
-        justify-content: space-between;
-
-        .october {
-            width: 48%;
-
-            p {
-                text-align: center;
-                background-color: $orange;
-                padding: 10px;
-            }
-
-            .btn {
-                background-color: transparent;
-                border: 2px solid $blue;
-                font-family: 'TaubSans-Medium';
-            }
+    .col-left {
+        width: 48%;
+        .grand-logo {
+            height: 200px;
         }
 
-        .december {
-            width: 48%;
+        h2 {
+            text-transform: none;
+        }
 
-            p {
-                text-align: center;
-                background-color: $orange;
-                padding: 10px;
+        ul {
+            padding-left: 5px;
+            li {
+                list-style: none;
+                font-family: 'TaubSans-Regular';
+                color: $black;
+                font-size: 24px;
+                line-height: 38px;
+            }
+        }
+    }
+
+    .col-right {
+        width: 48%;
+        background-color: $lightgrey;
+
+        .col-right-content {
+            padding: 60px;
+
+            .head-logo {
+                margin-top: 15px;
             }
 
-            .date {
-                display: flex;
-                justify-content: space-between;
-                margin-bottom: 20px;
+            h2 {
+                text-transform: none;
+                font-style: normal;
+                font-family: 'TaubSans-Bold';
+                color: $blue;
+            }  
 
-                .time {
-                    padding: 0;
-                    background-color: transparent;
-                    margin: 0;
+            ul {
+                list-style: none;
+                margin-top: 60px;
+
+                li {
+                    margin-top: 30px;
+                    ::before {
+                        content: "■";
+                        color: $blue;
+                        font-weight: bold;
+                        display: inline-block; 
+                        width: 1em;
+                        margin-left: -1em;
+                    } 
                 }
 
-                .register {
-                    border: 2px solid $blue;
-                    padding: 10px;
-                    font-family: 'TaubSans-Medium';
+                a {
+                    font-family: 'TaubSans-Regular';
+                    font-size: 20px;
+                    list-style: none;
+                    background-color: $orange;
+                    padding: 10px 40px;
+                    color: $white;
                     text-decoration: none;
-                    color: $blue;
-                    width: 40%;
-                    text-align: center;
                 }
             }
         }
     }
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .col-wrapper {
+        .col-left {
+            width: 100%;
+        }
+
+        .col-right {
+            width: 100%;
+        }
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) 
+and (max-width: 768px) {
+    .col-wrapper {
+        .col-left {
+            width: 100%;
+        }
+
+        .col-right {
+            width: 100%;
+        }
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)
+and (max-width: 991px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 992px)
+and (max-width: 1200px) {
+
+}
+

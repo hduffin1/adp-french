@@ -1,0 +1,151 @@
+header {
+    background-color: $blue;
+
+    .header-wrapper {
+        .adp-logo {
+            height: 80px;
+            padding-bottom: 20px;
+            padding-right: 20px;
+        }
+        .logo {
+            height: 110px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        .btn-holder {
+            margin-top: 50px;
+            .header-btn {
+                color: $white;
+                padding: 10px 20px;
+                margin-right: 10px;
+                font-family: 'TaubSans-Medium';
+                text-decoration: none;
+                text-align: center;
+                font-size: 26px; 
+
+                &:hover {
+                    color: $orange;
+                    transition: .4s;
+                }
+            }
+        }
+    }
+}
+
+.lower-header {
+    background-color: $orange;
+    text-align: center;
+    height: 60px;
+
+    p {
+        color: $white;
+        margin:0;
+        padding: 10px;
+        font-size: 26px;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    header {
+        .header-wrapper {
+            .adp-logo {
+                height: 60px;
+            }
+
+            .logo {
+                height: 90px;
+                width: auto;
+            }
+
+            .right {
+                width: 100%;
+                .btn-holder {
+                    margin-top: 0;
+                    display: flex;
+                    width: 100%;
+                    .header-btn {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    .lower-header {
+        height: auto;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) 
+and (max-width: 768px) {
+    header {
+        .header-wrapper {
+            .adp-logo {
+                height: 60px;
+            }
+
+            .logo {
+                height: 90px;
+                width: auto;
+            }
+
+            .right {
+                width: 50%;
+                .btn-holder {
+                    display: flex;
+                    width: 100%;
+                    
+                    .header-btn {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    .lower-header {
+        height: auto;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)
+and (max-width: 991px) {
+    header {
+        .header-wrapper {
+            .adp-logo {
+                height: 60px;
+            }
+
+            .logo {
+                height: 90px;
+                width: auto;
+            }
+
+            .right {
+                width: 50%;
+                .btn-holder {
+                    display: flex;
+                    width: 100%;
+                    
+                    .header-btn {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    .lower-header {
+        height: auto;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 992px)
+and (max-width: 1200px) {
+   
+}

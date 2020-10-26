@@ -1,6 +1,18 @@
+.sociale-logo {
+    height: 250px;
+    padding-top: 60px;
+    padding-left: 60px;
+}
+
+.head-logo {
+    margin-top: 80px;
+    height: 300px;
+    width: auto;
+}
+
 .welcome-wrapper {
     position: relative;
-    margin-top: 5%;
+    margin-top: -40px;
 
     .border-left {
         position: absolute;
@@ -11,7 +23,7 @@
         margin-top: 50px;
 
         .welcome-content {
-            padding-top: 1px;
+            padding-top: 30px;
             padding-left: 50px;
             padding-right: 50px;
 
@@ -32,175 +44,52 @@
     }
 }
 
-.columns-wrapper {
+.btns-wrapper {
+    margin-top: 90px;
+    padding-left: 50px;
 
-    .content {
+    .btns {
+        background-color: $blue;
         padding: 20px;
-    }
+        font-family: 'TaubSans-Regular';
+        color: $white;
+        font-size: 22px;
+        text-decoration: none;
+        margin-right: 10px;
 
-    img {
-        padding-top: 20px;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-    }
-
-    .la-grand {
-        width: 50%;
-        border: 1px solid $white;
-    }
-
-    .focus {
-        width: 50%;
-        border: 1px solid $white;
+        &:hover {
+            background-color: $orange;
+            transition: .4s;
+        }
     }
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .flex {
-        flex-wrap: wrap;
-    }
+    .btns-wrapper {
 
-    .header-wrapper {
-        .logo {
-            width: 50%;
-            height: auto;
-        }
-
-        .header-head {
-            width: 40%;
-            height: auto;
-        }
-    }
-
-    .columns-wrapper {
-
-        .content {
-            padding: 20px;
-        }
-
-        img {
-            padding-top: 0;
-            margin-left: auto;
-            margin-right: auto;
-            display: block;
-            width: 100%;
-            height: auto;
-        }
-
-        .la-grand {
-            width: 100%;
-            border: 1px solid $white;
-        }
-
-        .focus {
-            width: 100%;
-            border: 1px solid $white;
-        }
+       .btns {
+        display: block;
+        margin-top: 30px;
+        text-align: center;
+       }
     }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 601px) 
 and (max-width: 768px) {
-    .flex {
-        flex-wrap: wrap;
-    }
-
-    .header-wrapper {
-        .logo {
-            width: 50%;
-        }
-    }
-
-    .columns-wrapper {
-
-        .content {
-            padding: 20px;
-        }
-
-        img {
-            padding-top: 0;
-            margin-left: auto;
-            margin-right: auto;
-            display: block;
-            width: 100%;
-            height: auto;
-        }
-
-        .la-grand {
-            width: 100%;
-            border: 1px solid $white;
-        }
-
-        .focus {
-            width: 100%;
-            border: 1px solid $white;
-        }
-    }
+    
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px)
 and (max-width: 991px) {
-    .flex {
-        flex-wrap: wrap;
-    }
 
-    .columns-wrapper {
-
-        .content {
-            padding: 20px;
-        }
-
-        img {
-            padding-top: 0;
-            margin-left: auto;
-            margin-right: auto;
-            display: block;
-            width: 100%;
-            height: auto;
-        }
-
-        .la-grand {
-            width: 49%;
-            border: 1px solid $white;
-        }
-
-        .focus {
-            width: 49%;
-            border: 1px solid $white;
-        }
-    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 992px)
 and (max-width: 1200px) {
-   .columns-wrapper {
 
-        .content {
-            padding: 20px;
-        }
-
-        img {
-            padding-top: 0;
-            margin-left: auto;
-            margin-right: auto;
-            display: block;
-            width: 100%;
-            height: auto;
-        }
-
-        .la-grand {
-            width: 49%;
-            border: 1px solid $white;
-        }
-
-        .focus {
-            width: 49%;
-            border: 1px solid $white;
-        }
-    }
 }
