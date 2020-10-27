@@ -376,6 +376,15 @@ header .header-wrapper .btn-holder .header-btn:hover {
   text-decoration: none;
 }
 
+.replay {
+  text-decoration: none;
+  color: #121c4e;
+}
+.replay:hover {
+  color: #ed645e;
+  transition: 0.4s;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .col-wrapper .col-left {
