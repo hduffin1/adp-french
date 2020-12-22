@@ -3,12 +3,17 @@
 
     .col-left {
         width: 48%;
+
         .grand-logo {
             height: 200px;
         }
 
         h2 {
             text-transform: none;
+        }
+
+        strong {
+            text-transform: uppercase;
         }
 
         ul {
