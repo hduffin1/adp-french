@@ -6,6 +6,13 @@
 }
 
 @font-face {
+    font-family: 'TaubSans-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('TaubSans-Bold'), url('fonts/TaubSans-Bold.woff') format('woff');
+}
+
+@font-face {
     font-family: 'TaubSans-Medium';
     font-style: normal;
     font-weight: normal;
@@ -19,27 +26,32 @@
     src: local('TaubSans-Regular'), url('fonts/TaubSans-Regular.woff') format('woff');
 }
 
-
-
-
 h1 {
     font-family: 'TaubSans-Super';
     text-transform: uppercase;
-    color: $white;
-    font-size: 50px;
+    color: $darkblue;
+    font-size: 40px;
 }
 
 h2 {
-    font-family: 'TaubSans-Medium';
+    font-family: 'TaubSans-Regular';
     text-transform: uppercase;
-    color: $white;
-    font-size: 30px;
+    font-style: italic;
+    color: $orange;
+    font-size: 35px;
+}
+
+h3 {
+    font-family: 'TaubSans-Medium';
+    color: $blue;
+    font-size: 28px;
+    line-height: 38px;
 }
 
 p {
     font-family: 'TaubSans-Regular';
-    color: $white;
-    font-size: 18px;
+    color: $black;
+    font-size: 24px;
     line-height: 38px;
 }
 
@@ -49,9 +61,10 @@ strong {
 
 ul {
     padding-left: 20px;
+
     li {
         font-family: 'TaubSans-Regular';
-        color: $white;
+        color: $black;
         font-size: 18px;
         line-height: 38px;
     }

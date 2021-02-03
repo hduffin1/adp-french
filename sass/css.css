@@ -1,8 +1,15 @@
+@charset "UTF-8";
 @font-face {
   font-family: "TaubSans-Super";
   font-style: normal;
   font-weight: normal;
   src: local("TaubSans-Super"), url("fonts/TaubSans-Super.woff") format("woff");
+}
+@font-face {
+  font-family: "TaubSans-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("TaubSans-Bold"), url("fonts/TaubSans-Bold.woff") format("woff");
 }
 @font-face {
   font-family: "TaubSans-Medium";
@@ -19,21 +26,29 @@
 h1 {
   font-family: "TaubSans-Super";
   text-transform: uppercase;
-  color: #fff;
-  font-size: 50px;
+  color: #121c4e;
+  font-size: 40px;
 }
 
 h2 {
-  font-family: "TaubSans-Medium";
+  font-family: "TaubSans-Regular";
   text-transform: uppercase;
-  color: #fff;
-  font-size: 30px;
+  font-style: italic;
+  color: #ed645e;
+  font-size: 35px;
+}
+
+h3 {
+  font-family: "TaubSans-Medium";
+  color: #26328c;
+  font-size: 28px;
+  line-height: 38px;
 }
 
 p {
   font-family: "TaubSans-Regular";
-  color: #fff;
-  font-size: 18px;
+  color: #000;
+  font-size: 24px;
   line-height: 38px;
 }
 
@@ -46,14 +61,13 @@ ul {
 }
 ul li {
   font-family: "TaubSans-Regular";
-  color: #fff;
+  color: #000;
   font-size: 18px;
   line-height: 38px;
 }
 
 body {
   margin: 0;
-  background-color: #26328c;
 }
 
 .container {
@@ -67,19 +81,183 @@ body {
   justify-content: space-between;
 }
 
-.header-wrapper {
-  margin-top: 30px;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .flex {
+    flex-wrap: wrap;
+  }
+
+  .header-wrapper a {
+    width: 40%;
+  }
+  .header-wrapper a .logo {
+    height: auto;
+    width: 100%;
+  }
+  .header-wrapper .right {
+    width: 40%;
+  }
+  .header-wrapper .right .btn-holder {
+    margin-top: 20px;
+  }
+  .header-wrapper .right .btn-holder .header-btn {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .header-wrapper .right .header-head {
+    display: none;
+  }
 }
-.header-wrapper .logo {
-  height: 200px;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .flex {
+    flex-wrap: wrap;
+  }
 }
-.header-wrapper .header-head {
-  height: 200px;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .flex {
+    flex-wrap: wrap;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .flex {
+    flex-wrap: wrap;
+  }
+}
+header {
+  background-color: #26328c;
+}
+header .header-wrapper .adp-logo {
+  height: 80px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+header .header-wrapper .logo {
+  height: 110px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+header .header-wrapper .btn-holder {
+  margin-top: 50px;
+}
+header .header-wrapper .btn-holder .header-btn {
+  color: #fff;
+  padding: 10px 20px;
+  margin-right: 10px;
+  font-family: "TaubSans-Medium";
+  text-decoration: none;
+  text-align: center;
+  font-size: 26px;
+}
+header .header-wrapper .btn-holder .header-btn:hover {
+  color: #ed645e;
+  transition: 0.4s;
+}
+
+.lower-header {
+  background-color: #ed645e;
+  text-align: center;
+  height: 60px;
+}
+.lower-header p {
+  color: #fff;
+  margin: 0;
+  padding: 10px;
+  font-size: 26px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  header .header-wrapper .adp-logo {
+    height: 60px;
+  }
+  header .header-wrapper .logo {
+    height: 90px;
+    width: auto;
+  }
+  header .header-wrapper .right {
+    width: 100%;
+  }
+  header .header-wrapper .right .btn-holder {
+    margin-top: 0;
+    display: flex;
+    width: 100%;
+  }
+  header .header-wrapper .right .btn-holder .header-btn {
+    font-size: 16px;
+  }
+
+  .lower-header {
+    height: auto;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  header .header-wrapper .adp-logo {
+    height: 60px;
+  }
+  header .header-wrapper .logo {
+    height: 90px;
+    width: auto;
+  }
+  header .header-wrapper .right {
+    width: 50%;
+  }
+  header .header-wrapper .right .btn-holder {
+    display: flex;
+    width: 100%;
+  }
+  header .header-wrapper .right .btn-holder .header-btn {
+    font-size: 16px;
+  }
+
+  .lower-header {
+    height: auto;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  header .header-wrapper .adp-logo {
+    height: 60px;
+  }
+  header .header-wrapper .logo {
+    height: 90px;
+    width: auto;
+  }
+  header .header-wrapper .right {
+    width: 50%;
+  }
+  header .header-wrapper .right .btn-holder {
+    display: flex;
+    width: 100%;
+  }
+  header .header-wrapper .right .btn-holder .header-btn {
+    font-size: 16px;
+  }
+
+  .lower-header {
+    height: auto;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+.sociale-logo {
+  height: 250px;
+  padding-top: 60px;
+  padding-left: 60px;
+}
+
+.head-logo {
+  margin-top: 80px;
+  height: 300px;
+  width: auto;
 }
 
 .welcome-wrapper {
   position: relative;
-  margin-top: 5%;
+  margin-top: -40px;
 }
 .welcome-wrapper .border-left {
   position: absolute;
@@ -89,7 +267,7 @@ body {
   margin-top: 50px;
 }
 .welcome-wrapper .welcome-content-wrapper .welcome-content {
-  padding-top: 1px;
+  padding-top: 30px;
   padding-left: 50px;
   padding-right: 50px;
 }
@@ -106,211 +284,182 @@ body {
   bottom: -60px;
 }
 
-.columns-wrapper .content {
+.btns-wrapper {
+  margin-top: 90px;
+  padding-left: 50px;
+}
+.btns-wrapper .btns {
+  background-color: #26328c;
   padding: 20px;
+  font-family: "TaubSans-Regular";
+  color: #fff;
+  font-size: 22px;
+  text-decoration: none;
+  margin-right: 10px;
 }
-.columns-wrapper img {
-  padding-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-.columns-wrapper .la-grand {
-  width: 50%;
-  border: 1px solid #fff;
-}
-.columns-wrapper .focus {
-  width: 50%;
-  border: 1px solid #fff;
+.btns-wrapper .btns:hover {
+  background-color: #ed645e;
+  transition: 0.4s;
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .flex {
-    flex-wrap: wrap;
-  }
-
-  .header-wrapper .logo {
-    width: 50%;
-    height: auto;
-  }
-  .header-wrapper .header-head {
-    width: 40%;
-    height: auto;
-  }
-
-  .columns-wrapper .content {
-    padding: 20px;
-  }
-  .columns-wrapper img {
-    padding-top: 0;
-    margin-left: auto;
-    margin-right: auto;
+  .btns-wrapper .btns {
     display: block;
-    width: 100%;
-    height: auto;
+    margin-top: 30px;
+    text-align: center;
   }
-  .columns-wrapper .la-grand {
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+.col-wrapper {
+  margin-top: 100px;
+}
+.col-wrapper .col-left {
+  width: 48%;
+}
+.col-wrapper .col-left .grand-logo {
+  height: 200px;
+}
+.col-wrapper .col-left h2 {
+  text-transform: none;
+}
+.col-wrapper .col-left strong {
+  text-transform: uppercase;
+}
+.col-wrapper .col-left ul {
+  padding-left: 5px;
+}
+.col-wrapper .col-left ul li {
+  list-style: none;
+  font-family: "TaubSans-Regular";
+  color: #000;
+  font-size: 24px;
+  line-height: 38px;
+}
+.col-wrapper .col-right {
+  width: 48%;
+  background-color: #f5f5f5;
+}
+.col-wrapper .col-right .col-right-content {
+  padding: 60px;
+}
+.col-wrapper .col-right .col-right-content .head-logo {
+  margin-top: 15px;
+}
+.col-wrapper .col-right .col-right-content h2 {
+  text-transform: none;
+  font-style: normal;
+  font-family: "TaubSans-Bold";
+  color: #26328c;
+}
+.col-wrapper .col-right .col-right-content ul {
+  list-style: none;
+  margin-top: 60px;
+}
+.col-wrapper .col-right .col-right-content ul li {
+  margin-top: 30px;
+}
+.col-wrapper .col-right .col-right-content ul li ::before {
+  content: "■";
+  color: #26328c;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.col-wrapper .col-right .col-right-content ul a {
+  font-family: "TaubSans-Regular";
+  font-size: 20px;
+  list-style: none;
+  background-color: #ed645e;
+  padding: 10px 40px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.replay {
+  text-decoration: none;
+  color: #121c4e;
+}
+.replay:hover {
+  color: #ed645e;
+  transition: 0.4s;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .col-wrapper .col-left {
     width: 100%;
-    border: 1px solid #fff;
   }
-  .columns-wrapper .focus {
+  .col-wrapper .col-right {
     width: 100%;
-    border: 1px solid #fff;
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 601px) and (max-width: 768px) {
-  .flex {
-    flex-wrap: wrap;
-  }
-
-  .header-wrapper .logo {
-    width: 50%;
-  }
-
-  .columns-wrapper .content {
-    padding: 20px;
-  }
-  .columns-wrapper img {
-    padding-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+  .col-wrapper .col-left {
     width: 100%;
+  }
+  .col-wrapper .col-right {
+    width: 100%;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+footer .upper-footer {
+  margin-top: 50px;
+}
+footer .upper-footer .shapes {
+  height: 150px;
+  margin-right: auto;
+  float: right;
+  margin-bottom: 20px;
+}
+footer .lower-footer {
+  height: 50px;
+  clear: right;
+  background-color: #121c4e;
+}
+footer .lower-footer p {
+  padding-top: 5px;
+  color: #fff;
+  margin: 0;
+  text-align: right;
+}
+footer .lower-footer p a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  footer .upper-footer .shapes {
     height: auto;
-  }
-  .columns-wrapper .la-grand {
     width: 100%;
-    border: 1px solid #fff;
   }
-  .columns-wrapper .focus {
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  footer .upper-footer .shapes {
+    height: auto;
     width: 100%;
-    border: 1px solid #fff;
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .flex {
-    flex-wrap: wrap;
-  }
-
-  .columns-wrapper .content {
-    padding: 20px;
-  }
-  .columns-wrapper img {
-    padding-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 100%;
+  footer .upper-footer .shapes {
     height: auto;
-  }
-  .columns-wrapper .la-grand {
-    width: 49%;
-    border: 1px solid #fff;
-  }
-  .columns-wrapper .focus {
-    width: 49%;
-    border: 1px solid #fff;
+    width: 100%;
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-  .columns-wrapper .content {
-    padding: 20px;
-  }
-  .columns-wrapper img {
-    padding-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+  footer .upper-footer .shapes {
+    height: auto;
     width: 100%;
-    height: auto;
-  }
-  .columns-wrapper .la-grand {
-    width: 49%;
-    border: 1px solid #fff;
-  }
-  .columns-wrapper .focus {
-    width: 49%;
-    border: 1px solid #fff;
   }
 }
-footer {
-  margin-top: 100px;
-}
-footer .adp-wrapper .adp-logo {
-  margin-top: 50px;
-  margin-left: 30px;
-  margin-bottom: 30px;
-  height: 150px;
-}
-footer .adp-wrapper .shapes {
-  flex-wrap: 70%;
-  height: 200px;
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  footer {
-    margin-top: 100px;
-  }
-  footer .flex {
-    flex-wrap: nowrap;
-  }
-  footer .adp-wrapper .adp-logo {
-    margin-top: 50px;
-    margin-left: 0;
-    margin-bottom: 30px;
-    height: 100px;
-    flex-basis: 10%;
-  }
-  footer .adp-wrapper .shapes {
-    flex-wrap: 70%;
-    height: auto;
-  }
-}
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 601px) and (max-width: 768px) {
-  footer {
-    margin-top: 100px;
-  }
-  footer .flex {
-    flex-wrap: nowrap;
-  }
-  footer .adp-wrapper .adp-logo {
-    margin-top: 50px;
-    margin-left: 0;
-    margin-bottom: 30px;
-    height: auto;
-    flex-basis: 10%;
-  }
-  footer .adp-wrapper .shapes {
-    flex-wrap: 70%;
-    height: auto;
-  }
-}
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  footer {
-    margin-top: 100px;
-  }
-  footer .flex {
-    flex-wrap: nowrap;
-  }
-  footer .adp-wrapper .adp-logo {
-    margin-top: 50px;
-    margin-left: 0;
-    margin-bottom: 30px;
-    height: auto;
-    flex-basis: 10%;
-  }
-  footer .adp-wrapper .shapes {
-    flex-wrap: 70%;
-    height: 180px;
-  }
-}
-/* Medium devices (landscape tablets, 768px and up) */
 
 /*# sourceMappingURL=css.css.map */

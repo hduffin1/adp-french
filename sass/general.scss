@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    background-color: $blue;
 }
 
 .container {
@@ -14,13 +13,65 @@ body {
     justify-content: space-between;
 }
 
-.header-wrapper {
-    margin-top: 30px;
-    .logo {
-        height: 200px;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .flex {
+        flex-wrap: wrap;
     }
 
-    .header-head {
-        height: 200px;
+    .header-wrapper {
+        a {
+        width: 40%;
+            .logo {
+                height: auto;
+                width: 100%;
+            }
+        }
+        .right {
+            width: 40%;
+
+            .btn-holder {
+                margin-top: 20px;
+                .header-btn {
+                    display: block;
+                    margin-bottom: 10px;
+                    width: 100%;
+                }
+            }
+
+            .header-head {
+                display: none;
+            }
+        }
     }
 }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) 
+and (max-width: 768px) {
+    .flex {
+        flex-wrap: wrap;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)
+and (max-width: 991px) {
+    .flex {
+        flex-wrap: wrap;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 992px)
+and (max-width: 1200px) {
+    .flex {
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+
+

@@ -1,42 +1,42 @@
 footer {
-    margin-top: 100px;
-    .adp-wrapper {
-        .adp-logo {
-            margin-top: 50px;
-            margin-left: 30px;
-            margin-bottom: 30px;
-            height: 150px;
-        }
+    .upper-footer {
+        margin-top: 50px;
 
         .shapes {
-            flex-wrap: 70%;
-            height: 200px;
+            height: 150px;
+            margin-right: auto;
+            float: right;
+            margin-bottom: 20px;
         }
-    } 
+    }
+
+    .lower-footer {
+        height: 50px;
+        clear: right;
+        background-color: $darkblue;
+        p {
+            padding-top: 5px;
+            color: $white;
+            margin: 0;
+            text-align: right;
+
+            a {
+                color: $white;
+                text-decoration: none;
+            }
+        }
+    }
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     footer {
-        .flex {
-            flex-wrap: nowrap;
-        }
-        margin-top: 100px;
-
-        .adp-wrapper {
-            .adp-logo {
-                margin-top: 50px;
-                margin-left: 0;
-                margin-bottom: 30px;
-                height: 100px;
-                flex-basis: 10%;
-            }
-
+        .upper-footer {
             .shapes {
-                flex-wrap: 70%;
                 height: auto;
+                width: 100%;
             }
-        } 
+        }
     }
 }
 
@@ -44,25 +44,12 @@ footer {
 @media only screen and (min-width: 601px) 
 and (max-width: 768px) {
     footer {
-        .flex {
-            flex-wrap: nowrap;
-        }
-        margin-top: 100px;
-
-        .adp-wrapper {
-            .adp-logo {
-                margin-top: 50px;
-                margin-left: 0;
-                margin-bottom: 30px;
-                height: auto;
-                flex-basis: 10%;
-            }
-
+        .upper-footer {
             .shapes {
-                flex-wrap: 70%;
                 height: auto;
+                width: 100%;
             }
-        } 
+        }
     }
 }
 
@@ -70,30 +57,24 @@ and (max-width: 768px) {
 @media only screen and (min-width: 768px)
 and (max-width: 991px) {
     footer {
-        .flex {
-            flex-wrap: nowrap;
-        }
-        margin-top: 100px;
-
-        .adp-wrapper {
-            .adp-logo {
-                margin-top: 50px;
-                margin-left: 0;
-                margin-bottom: 30px;
-                height: auto;
-                flex-basis: 10%;
-            }
-
+        .upper-footer {
             .shapes {
-                flex-wrap: 70%;
-                height: 180px;
+                height: auto;
+                width: 100%;
             }
-        } 
+        }
     }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 992px)
 and (max-width: 1200px) {
-
+    footer {
+        .upper-footer {
+            .shapes {
+                height: auto;
+                width: 100%;
+            }
+        }
+    }
 }
